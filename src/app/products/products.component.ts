@@ -1,5 +1,6 @@
-import { Component, OnInit, Input } from "@angular/core";
+import { Component, OnInit } from "@angular/core";
 import { Product } from "../classes/product";
+import { PRODUCTS } from "../mock-products";
 
 @Component({
   selector: "app-products",
@@ -7,7 +8,7 @@ import { Product } from "../classes/product";
   styleUrls: ["./products.component.css"]
 })
 export class ProductsComponent implements OnInit {
-  @Input() products: Array<Product>;
+  products = PRODUCTS;
 
   constructor() {}
 

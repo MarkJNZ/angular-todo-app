@@ -1,3 +1,6 @@
-<div class="products-list">
-  <!-- <li *ngFor="let product in products"></li> -->
-</div>
+<h4>Products</h4>
+<ul class="products-list">
+  <li *ngFor="let product of products">
+    <span class="item">{{product.id}}</span> {{product.name}}
+  </li>
+</ul>
