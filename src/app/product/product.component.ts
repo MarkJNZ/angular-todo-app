@@ -11,7 +11,8 @@ export class ProductComponent implements OnInit {
     id: 1,
     name: "phone",
     description: "Motorolla G5s",
-    cost: 350
+    cost: 350,
+    image: ""
   };
 
   constructor() {}
