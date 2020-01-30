@@ -1,23 +1,30 @@
-<h4>{{product.name | uppercase}}</h4>
-<div>
-  <span>id: </span>
-  <span>{{product.id}}</span>
-</div>
-<div>
-  <span>description: </span>
-  <span>{{product.description}}</span>
-</div>
-<div>
-  <span>cost: </span>
-  <span>{{product.cost | currency}}</span>
-</div>
-<br />
+<div class="flex-container">
+  <div>
+    <h4>{{product.name | uppercase}}</h4>
+    <div>
+      <span>id: </span>
+      <span>{{product.id}}</span>
+    </div>
+    <div>
+      <span>description: </span>
+      <span>{{product.description}}</span>
+    </div>
+    <div>
+      <span>cost: </span>
+      <span>{{product.cost | currency}}</span>
+    </div>
 
-<img src="{{product.image}}" />
+    <br />
 
-<div>
-  <label
-    >name:
-    <input [(ngModel)]="product.name" placeholder="name" />
-  </label>
+    <img src="{{product.image}}" />
+    <br />
+    <br />
+
+    <div>
+      <label
+        >Change Name:
+        <input [(ngModel)]="product.name" placeholder="name" />
+      </label>
+    </div>
+  </div>
 </div>
