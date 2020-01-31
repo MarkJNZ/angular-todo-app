@@ -9,17 +9,17 @@ export const PRODUCTS: Product[] = [
     image: ""
   },
   {
-    id: 2,
-    name: "guitar",
-    description: "Fender Stratocaster",
-    cost: 1800,
-    image: ""
+    id: 1,
+    name: "Fender Telecaster",
+    description: "50s Telecaster",
+    cost: 3500,
+    image: "/assets/images/img-tele.jpg"
   },
   {
-    id: 3,
-    name: "car",
-    description: "Shelby Daytona",
-    cost: 1000000,
-    image: ""
+    id: 1,
+    name: "Fender Stratocaster",
+    description: "50s Telecaster",
+    cost: 3500,
+    image: "/assets/images/img-tele.jpg"
   }
 ];

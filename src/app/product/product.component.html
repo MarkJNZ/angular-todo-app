@@ -1,21 +1,9 @@
-<h2>{{product.name | uppercase}}</h2>
-<div>
-  <span>id: </span>
-  <span>{{product.id}}</span>
-</div>
-<div>
-  <span>description: </span>
-  <span>{{product.description}}</span>
-</div>
-<div>
-  <span>cost: </span>
-  <span>{{product.cost | currency}}</span>
-</div>
-<br />
-
-<div>
-  <label
-    >name:
-    <input [(ngModel)]="product.name" placeholder="name" />
-  </label>
+<div class="flex-container">
+  <span>{{product.name}}</span>
+  <div class="btns">
+    <button class="btn-detail" (click)="onViewDetail(product.id)">
+      Detail
+    </button>
+    <button class="btn-delete" (click)="onDelete(product.id)">Delete</button>
+  </div>
 </div>
