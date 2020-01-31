@@ -1,11 +1,45 @@
+h4 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+}
+
 .flex-container {
   display: flex;
-  flex-direction: column;
+  flex-flow: column wrap;
+  background-color: rgb(74, 74, 74);
+  border-radius: 5px;
+  padding: 5px;
+  max-height: 500px;
+  max-width: 600px;
+  align-items: left;
+  justify-content: space-around;
+}
+
+.flex-item {
+  margin: 5px;
+  flex: 1;
+}
+
+input {
+  border: none;
+  border-radius: 2px;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(209, 209, 209);
+}
+
+button {
+  margin-left: 5px;
+  background-color: #008cba;
+  border: none;
+  border-radius: 2px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: #fff;
 }
 
 span,
-label,
-input {
+label {
   font-family: Arial, Helvetica, sans-serif;
   color: rgb(209, 209, 209);
 }

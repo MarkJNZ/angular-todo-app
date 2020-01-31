@@ -1,5 +1,5 @@
 <div class="flex-container">
-  <div>
+  <div class="flex-item">
     <h4>{{product.name | uppercase}}</h4>
     <div>
       <span>id: </span>
@@ -13,18 +13,20 @@
       <span>cost: </span>
       <span>{{product.cost | currency}}</span>
     </div>
+  </div>
 
-    <br />
-
+  <div class="flex-item">
     <img src="{{product.image}}" />
-    <br />
-    <br />
+  </div>
 
-    <div>
-      <label
-        >Change Name:
-        <input [(ngModel)]="product.name" placeholder="name" />
-      </label>
-    </div>
+  <div class="flex-item">
+    <label
+      >Name:
+      <input [(ngModel)]="currentName" placeholder="currentName" />
+    </label>
+
+    <button (click)="onApplyNewName(currentName)">
+      Apply
+    </button>
   </div>
 </div>

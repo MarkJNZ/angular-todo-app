@@ -15,6 +15,13 @@ export class ProductDetailComponent implements OnInit {
     image: "/assets/images/img-tele.jpg"
   };
 
+  currentName: string = "Enter new name";
+
+  onApplyNewName = name => {
+    this.product.name = this.currentName;
+    this.currentName = "Enter new name";
+  };
+
   constructor() {}
 
   ngOnInit() {}

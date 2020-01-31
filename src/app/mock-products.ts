@@ -6,20 +6,20 @@ export const PRODUCTS: Product[] = [
     name: "phone",
     description: "Motorolla G5s",
     cost: 350,
-    img: ""
+    image: ""
   },
   {
     id: 2,
     name: "guitar",
     description: "Fender Stratocaster",
     cost: 1800,
-    img: ""
+    image: ""
   },
   {
     id: 3,
     name: "car",
     description: "Shelby Daytona",
     cost: 1000000,
-    img: ""
+    image: ""
   }
 ];
